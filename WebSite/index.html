@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- Include the library. -->
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <title>Agency - Start Bootstrap Theme</title>
@@ -112,53 +118,61 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img class="img-fluid" src="images/PSVIRTUALPET3 - Copy.png" alt="">
-                  
-                  
-              </a>
-            <div class="portfolio-caption">
-              <h4>Virtual Pet</h4>
-              <p class="text-muted">Back-end C# Application</p>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="images/PSVIRTUALPET3 - Copy.png" alt="">
+
+
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Virtual Pet</h4>
+                    <p class="text-muted">Back-end C# Application</p>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img class="img-fluid" src="images/PSTUSCANY.png" alt="">
-              </a>
-              
-              <div class="portfolio-caption">
-                  <h4>Tuscany Villa</h4>
-                  <p class="text-muted">Front-end HTML5/CSS3 Website</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img class="img-fluid" src="images/PSVPSHELTER.png" alt="">
-              </a>
-              
-              <div class="portfolio-caption">
-                  <h4>VP Shelter</h4>
-                  <p class="text-muted">Back-end C# project incorporating OOP</p>
-              </div>
-          </div>
-          
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="images/PSTUSCANY.png" alt="">
+                </a>
+
+                <div class="portfolio-caption">
+                    <h4>Tuscany Villa</h4>
+                    <p class="text-muted">Front-end HTML5/CSS3 Website</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="images/PSVPSHELTER.png" alt="">
+                </a>
+
+                <div class="portfolio-caption">
+                    <h4>VP Shelter</h4>
+                    <p class="text-muted">Back-end C# project incorporating OOP</p>
+                </div>
+            </div>
+
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+
+            <script>
+                GitHubCalendar(".calendar", "ndomitio");
+            </script>
         </div>
       </div>
     </section>
